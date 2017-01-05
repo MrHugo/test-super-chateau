@@ -8,5 +8,14 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 })
 
 export class CarouselComponent {
-  @Input() images: Object[] = null;
+    @Input() images: Object[] = null;
+    private carouselIsFullScreen: boolean;
+
+    constructor() {
+        this.carouselIsFullScreen = false;
+    }
+
+    private resizeCarousel() {
+        this.carouselIsFullScreen = !this.carouselIsFullScreen;
+    }
 }

@@ -13,5 +13,5 @@ export class HomeComponent {
       { "title": "Encore la première...", "url": "../../assets/images/first.jpg" },
       { "title": "La deuxième", "url": "../../assets/images/sec.jpg" },
       { "title": "Et la dernière !", "url": "../../assets/images/third.jpg" }
-  ];
+    ];
 }

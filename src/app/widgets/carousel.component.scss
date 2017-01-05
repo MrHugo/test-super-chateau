@@ -1,6 +1,33 @@
-.carousel{
+@import '../../assets/styles/colors.scss';
+
+.carousel {
+    cursor: pointer;
     overflow:hidden;
     width:100%;
+
+    .background-diapo {
+        position:relative;
+    }
+
+    .background-diapo::after {
+       content:"";
+       z-index: -1;
+       position:fixed;
+       left:0;
+       right:0;
+       top:0;
+       bottom:0;
+       background:rgba(0,0,0,0.8);
+   }
+
+    &.carousel-fullscreen {
+        width: 80%;
+        max-height: 90%;
+        position: fixed;
+        left: 10%;
+        top: 10px;
+        z-index: 1;
+    }
 }
 .slides{
     list-style:none;

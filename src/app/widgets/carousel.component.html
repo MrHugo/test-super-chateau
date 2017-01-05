@@ -1,4 +1,7 @@
-<div class="carousel">
+<div class="carousel"
+     [ngClass]="{'carousel-fullscreen': carouselIsFullScreen}"
+     (click)="resizeCarousel()">
+   <div [ngClass]="{'background-diapo': carouselIsFullScreen}"><div>
    <ul class="slides">
        <li *ngFor="let image of images">
            <h1>{{ image.title }}</h1>
