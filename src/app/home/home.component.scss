@@ -1,0 +1,96 @@
+@import '../../assets/styles/colors.scss';
+
+$margin: 15px;
+
+.home {
+    /* Navbar */
+
+    .navbar {
+        margin: 0;
+
+        li {
+            margin-right: $margin;
+        }
+        .navbar-brand {
+            color: $red;
+        }
+    }
+    .navbar-search {
+        width: 500px;
+        border-radius: 0;
+    }
+
+    /* Single elements */
+
+    .carousel {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    hr {
+        height: 1px;
+        border: 0;
+        border-top: 1px solid $grey;
+    }
+
+    .tips {
+        font-size: 11px;
+        margin: $margin;
+    }
+
+    /* Style shortcuts */
+
+    .centered {
+        text-align: center;
+    }
+
+    .cropped {
+        height: 420px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            // margin top
+        }
+    }
+
+    /* Main content */
+
+    .container {
+
+        .middle-content {
+
+            .middle-content-tab {
+
+                .middle-content-tab-titles {
+                    color: $grey;
+                }
+            }
+        }
+
+        .side-content {
+            border-width: 1px;
+            border-style: solid;
+            border-color: $grey;
+
+            .side-content-desc {
+                margin-top: -5px;
+            }
+        }
+    }
+
+    /* Google map */
+
+    .sebm-google-map-container {
+        height: 300px;
+    }
+}

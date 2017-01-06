@@ -1,0 +1,98 @@
+<div class="home">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">=D</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control navbar-search" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Go!</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Devenir hôte</a></li>
+            <li><a href="#">Aide</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <div class="header cropped">
+      <img src='../../assets/images/sec.jpg'>
+  </div>
+  <div class="container">
+      <div class="row">
+        <div class="middle-content col-xs-9 pull-md-3">
+            <h1>A propos de ce château</h1>
+            <hr>
+            <p>Le château De montety est un château et un monument historique français qui se situe en région parisienne,
+            en France. Il est la résidence de Grégoire et Bertrand De Montety. Le roi et la cour y résidèrent de façon permanente
+            du 6 mai 1682 au 6 octobre 1789, à l'exception des années de la Régence de 1715 à 1723.</p>
+            <hr>
+            <div class="middle-content-tab row">
+                <div class="col-xs-12">
+                    <div class="middle-content-tab-titles col-xs-4">
+                        <div class="tab-cell"><p>Le chateau</p></div>
+                    </div>
+                    <div class="middle-content-tab-content col-xs-8">
+                        <div class="tab-cell">
+                            <p>Type de logement : <b>Chateau entier</b></p>
+                        </div>
+                    </div>
+                    <div class="middle-content-tab-titles col-xs-4">
+                        <div class="tab-cell"><p>Prix</p></div>
+                    </div>
+                    <div class="middle-content-tab-content col-xs-8">
+                        <div class="tab-cell">
+                            <p>Le prix est un secret.</p>
+                        </div>
+                    </div>
+                    <div class="middle-content-tab-titles col-xs-4">
+                        <div class="tab-cell"><p>Description</p></div>
+                    </div>
+                    <div class="middle-content-tab-content col-xs-8">
+                        <div class="tab-cell">
+                            <p>(Laughing out loud) est un acronyme employé en tant qu'interjection, très répandu sur Internet,
+                            symbolisant le rire ou l'amusement. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="side-content col-xs-3 push-md-9">
+          <h2 class="centered">Reserver ce super chateau</h2>
+          <p class="side-content-desc centered">(1 seul voyageur)</p>
+          <hr>
+          <button type="submit" class="btn btn-primary btn-large btn-block">
+              <span>Réserver</span>
+          </button>
+          <p class="tips centered">Vous serez débité même sans confirmer.</p>
+        </div>
+      </div>
+      <div class="carousel-container">
+          <carousel [images]="listImages"></carousel>
+      </div>
+      <div class="google-map-container">
+          <sebm-google-map
+          [zoom]="15"
+          [latitude]="lat"
+          [longitude]="lng">
+              <sebm-google-map-circle
+                    [latitude]="lat"
+                    [longitude]="lng"
+                    [radius]="500"
+                    [fillColor]="'red'"
+                    [circleDraggable]="true"
+                    [editable]="true"></sebm-google-map-circle>
+          </sebm-google-map>
+      </div>
+  </div>
+</div>
